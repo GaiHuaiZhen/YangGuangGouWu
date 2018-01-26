@@ -165,7 +165,7 @@ header #heade a{
 	
 }
 .nav i{
-	margin: 0 20px;
+	margin-right:20px;
 	padding: 0 20px;
 	height: 30px;
 	display: inline-block;
@@ -179,14 +179,4 @@ header #heade a{
 .nav i:nth-of-type(2){
 	color: orangered;
 	font-weight: 900;
-}
-/*nav 菜单*/
-
-nav{
-	width: 100%;
-	border-top: 2px solid orangered;
-}
-#navs{
-	width: 1200px;
-	
 }
