@@ -247,11 +247,12 @@ nav {
 
 .stairs_1F {
   width: 1200px;
-  margin: 0 auto;
-  background: blueviolet; }
+  margin: 0 auto; }
   .stairs_1F .stairs_1F_header {
-    overflow: hidden;
-    border-bottom: 1px solid red; }
+    height: 40px;
+    border-bottom: 1px solid red;
+    margin-bottom: 5px;
+    position: relative; }
     .stairs_1F .stairs_1F_header span {
       margin-top: 5px;
       float: left; }
@@ -263,13 +264,20 @@ nav {
         padding-top: 7px;
         box-sizing: border-box;
         font-size: 12px; }
-    .stairs_1F .stairs_1F_header ul {
+    .stairs_1F .stairs_1F_header .stairs_1F_header_menu {
       float: right; }
-      .stairs_1F .stairs_1F_header ul li {
+      .stairs_1F .stairs_1F_header .stairs_1F_header_menu li {
         float: left;
         font-size: 16px;
-        padding: 10px 20px;
+        padding: 7px 20px;
+        border-top: 5px solid transparent;
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
         box-sizing: border-box; }
+        .stairs_1F .stairs_1F_header .stairs_1F_header_menu li:hover {
+          color: red;
+          border-color: red;
+          border-bottom: 2px solid white; }
   .stairs_1F .stairs_1F_left {
     position: relative;
     width: 210px; }
@@ -308,12 +316,18 @@ nav {
     float: left;
     width: 333px;
     height: 472px;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
+    .stairs_1F_inner .stairs_1F_inner_play ul {
+      position: absolute;
+      width: 333px;
+      height: 472px; }
   .stairs_1F_inner .stairs_1F_inner_play_bottom {
     position: absolute;
     bottom: 0;
     left: 100px;
-    display: block; }
+    display: block;
+    z-index: 10; }
     .stairs_1F_inner .stairs_1F_inner_play_bottom i {
       display: inline-block;
       background: #777;
@@ -325,14 +339,17 @@ nav {
       line-height: 20px;
       opacity: 0.6; }
   .stairs_1F_inner .stairs_1F_inner_play_left {
+    z-index: 10;
     position: absolute;
     display: block;
     opacity: 0.2;
     width: 30px;
     height: 60px;
     top: 200px;
-    background: #000000 url(../img/slider-arrow.png) no-repeat -132px -137px; }
+    background: #000000 url(../img/slider-arrow.png) no-repeat -132px -137px;
+    display: none; }
   .stairs_1F_inner .stairs_1F_inner_play_right {
+    z-index: 10;
     display: block;
     opacity: 0.2;
     width: 30px;
@@ -340,6 +357,32 @@ nav {
     position: absolute;
     right: 0;
     top: 200px;
-    background: #000000 url(../img/slider-arrow.png) no-repeat -12px -137px; }
+    background: #000000 url(../img/slider-arrow.png) no-repeat -12px -137px;
+    display: none; }
+
+/*选项卡啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊*/
+.stairs_1F_header_play {
+  position: absolute;
+  width: 990px;
+  height: 474px;
+  bottom: -480px;
+  right: 0;
+  background: red;
+  z-index: 99; }
+  .stairs_1F_header_play .stairs_1F_header_play_ul {
+    width: 990px;
+    height: 474px; }
+    .stairs_1F_header_play .stairs_1F_header_play_ul li {
+      float: left;
+      margin: 10px 35px 25px 30px; }
+      .stairs_1F_header_play .stairs_1F_header_play_ul li a p {
+        width: 100px;
+        text-align: center;
+        font-size: 12px; }
+      .stairs_1F_header_play .stairs_1F_header_play_ul li a b {
+        color: yellow; }
+      .stairs_1F_header_play .stairs_1F_header_play_ul li a img {
+        width: 130px;
+        height: 130px; }
 
 /*# sourceMappingURL=index2.css.map */

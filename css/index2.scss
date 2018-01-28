@@ -359,12 +359,14 @@ nav{
 .stairs_1F{
     width: 1200px;
     margin: 0 auto;
-    background: blueviolet;
+    //background: blueviolet;
     
     .stairs_1F_header{
-        //height: 30px;
-        overflow: hidden;
+        height: 40px;
+       // overflow: hidden;
         border-bottom: 1px solid red;
+        margin-bottom: 5px;
+        position: relative;
         
         span{
             margin-top: 5px;
@@ -381,13 +383,21 @@ nav{
          
        
         }
-        ul{
+        .stairs_1F_header_menu{
                 float: right;
                 li{
                     float: left;
                     font-size: 16px;
-                    padding: 10px 20px;
+                    padding: 7px 20px;
+                    border-top: 5px solid transparent;
+                    border-left: 1px solid transparent;
+                    border-right: 1px solid transparent;
                     box-sizing: border-box;
+                    &:hover{
+                        color: red;
+                        border-color: red;
+                        border-bottom: 2px solid white;
+                    }
                  
                 }
             }
@@ -461,6 +471,12 @@ nav{
         width: 333px;
         height: 472px;
         position: relative;
+        overflow: hidden;
+        ul{
+            position: absolute;
+            width: 333px;
+            height: 472px;
+        }
         
         
     }
@@ -469,6 +485,7 @@ nav{
         bottom: 0;
         left: 100px;
         display: block;
+        z-index: 10;
         i{
             display: inline-block;
             background:#777;
@@ -485,6 +502,7 @@ nav{
     }
     
     .stairs_1F_inner_play_left{
+        z-index: 10;
             position: absolute;
             display: block;
             opacity: 0.2;
@@ -493,9 +511,11 @@ nav{
             
             top: 200px;
             background: #000000 url(../img/slider-arrow.png) no-repeat -132px -137px;
+            display: none;
            
         }
         .stairs_1F_inner_play_right{
+            z-index: 10;
              display: block;
             opacity: 0.2;
             width: 30px;
@@ -504,5 +524,59 @@ nav{
             right: 0;
             top: 200px;
             background: #000000 url(../img/slider-arrow.png) no-repeat -12px -137px;
+            display: none;
         }
 }
+
+/*选项卡啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊*/
+
+.stairs_1F_header_play{
+    
+    position: absolute;
+     width: 990px;
+    height: 474px;
+    
+    bottom: -480px;
+    right: 0;
+    background: red;
+    z-index: 99;
+    
+    .stairs_1F_header_play_ul{
+        width: 990px;
+        height: 474px;
+        
+        li{
+            float: left;
+            margin: 10px 35px 25px 30px ;
+            
+            a{
+                
+               p{
+                   width: 100px;
+                   text-align: center;
+                   font-size: 12px;
+                   //font-weight: 900;
+                   
+               } 
+               
+               b{
+                    color:yellow ;
+               }
+               
+                
+               img{
+                    width: 130px;
+                    height: 130px;
+            }
+            
+        }}
+        
+    }
+    
+    
+    }
+    
+
+
+
+

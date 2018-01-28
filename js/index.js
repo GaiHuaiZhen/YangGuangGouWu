@@ -3,13 +3,15 @@
 requirejs.config({
 	paths:{
 		jquery:"jquery-1.11.1.min",
-		nav_top:"nav_top"
+		nav_top:"nav_top",
+		F1play:"F1play",
+		stairs_1F_header_menu_play:"stairs_1F_header_menu_play"
 	}
 })
 
 
 //发起请求
-require(["jquery","nav_top"],function(jquery,nav_top){
+require(["jquery","nav_top","F1play","stairs_1F_header_menu_play"],function(jquery,nav_top,F1play,stairs_1F_header_menu_play){
 	
 	
 	
@@ -109,7 +111,7 @@ $(".navs_left ul li").mouseenter(function(){
 	$(".navs_left_menu").eq(index).css({"display":"block"})
 								.siblings(".navs_left_menu")
 								.css("display","none")
-	console.log(index)
+	
 	
 	
 	
@@ -123,12 +125,16 @@ $("#navs").mouseleave(function(){
 
 
 
+//1Fplay调用
 
-//1F的轮播图开始了，啊啊啊啊啊啊啊啊啊啊啊啊
-
-
-
+stairs_1F_inner_play()
 
 
-	
+//调用选项卡
+
+stairs_1F_header_menu_plays()
+
+
+
+
 })
