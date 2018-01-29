@@ -133,7 +133,20 @@ stairs_1F_inner_play()
 //调用选项卡
 
 stairs_1F_header_menu_plays()
-
+//老子记住了，json文件里一定别加备注，加了就boom
+//window.onload=function(){
+//	$.ajax({
+//					type:"get",
+//					url:"js/menu_play.json",
+//					//dataType:"json",
+//					success:function(res){
+//						console.log(res)
+//						
+//						
+//						
+//					}
+//				})
+//}
 
 
 

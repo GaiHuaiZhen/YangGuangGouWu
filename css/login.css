@@ -1,0 +1,187 @@
+@charset "UTF-8";
+#header {
+  width: 100%;
+  height: 82px; }
+
+.header {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-top: 20px; }
+  .header h1 {
+    float: left; }
+  .header p {
+    float: right;
+    margin-top: 40px; }
+    .header p a {
+      font-weight: 900;
+      margin-left: 5px; }
+
+#banner {
+  width: 100%;
+  height: 680px;
+  background: url(../imglogin/register_bg.png) repeat; }
+
+.banner {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.login {
+  width: 860px;
+  height: 560px;
+  background: rgba(0, 0, 0, 0.15);
+  margin: 60px auto;
+  padding: 10px; }
+  .login .login_box {
+    width: 820px;
+    height: 520px;
+    padding: 19px;
+    border: 1px solid #ccc;
+    background: #fff; }
+
+.login_box_left {
+  float: left; }
+  .login_box_left h3 {
+    font-size: 18px;
+    color: #777777;
+    border-bottom: 1px solid #000;
+    padding: 10px 30px; }
+  .login_box_left dl {
+    padding: 0 10px;
+    margin: 20px 0;
+    overflow: hidden;
+    border: 1px solid burlywood;
+    position: relative; }
+    .login_box_left dl dt {
+      float: left;
+      padding: 12px 0;
+      height: 30px;
+      line-height: 30px; }
+    .login_box_left dl dd {
+      float: left;
+      padding: 12px 0; }
+      .login_box_left dl dd input {
+        float: left;
+        border: none;
+        width: 290px;
+        height: 30px; }
+    .login_box_left dl:nth-of-type(2) dd {
+      position: relative; }
+      .login_box_left dl:nth-of-type(2) dd input {
+        width: 160px; }
+    .login_box_left dl:nth-of-type(2) .verify {
+      display: inline-block;
+      width: 130px;
+      height: 30px;
+      line-height: 30px;
+      background: #777777;
+      text-align: center;
+      font-weight: 900; }
+    .login_box_left dl:nth-of-type(2) .verify_none {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: block;
+      width: 130px;
+      height: 50px;
+      background: rgba(0, 0, 0, 0.55);
+      opacity: .3;
+      text-align: center;
+      color: #FFF;
+      font-size: 16px;
+      line-height: 50px;
+      display: none; }
+    .login_box_left dl .uname_judge, .login_box_left dl .veri_judge, .login_box_left dl .upwd_judge {
+      position: absolute;
+      height: 20px;
+      color: #fff;
+      background: red;
+      left: 57px;
+      bottom: 0;
+      display: none; }
+  .login_box_left p {
+    height: 20px; }
+    .login_box_left p input {
+      margin-right: 6px;
+      vertical-align: middle; }
+  .login_box_left button {
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFF;
+    background-color: #FF500B;
+    width: 398px;
+    height: 42px;
+    border: solid 1px #F15C18;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 30px 0; }
+
+.login_box_right {
+  float: right; }
+  .login_box_right dl {
+    width: 300px;
+    height: 500px;
+    border-left: 1px dashed #555555;
+    padding-left: 50px; }
+    .login_box_right dl dt {
+      font-size: 16px;
+      margin-bottom: 30px; }
+    .login_box_right dl dd p {
+      color: #777777;
+      margin: 15px 0; }
+      .login_box_right dl dd p i {
+        display: inline-block;
+        width: 28px;
+        height: 24px;
+        background: url(../imglogin/login_pic.png) no-repeat; }
+      .login_box_right dl dd p:nth-of-type(1) i {
+        background-position: 0 -76px; }
+      .login_box_right dl dd p:nth-of-type(2) i {
+        background-position: -30px -76px; }
+      .login_box_right dl dd p:nth-of-type(3) i {
+        background-position: -60px -76px; }
+      .login_box_right dl dd p:nth-of-type(4) i {
+        background-position: -90px -76px; }
+      .login_box_right dl dd p:nth-of-type(5) i {
+        background-position: -120px -76px; }
+
+/*搴曢儴*/
+#footer {
+  width: 100%;
+  height: 180px;
+  background: #343a3a; }
+
+.footer {
+  width: 1200px;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 20px;
+  margin: 0 auto;
+  text-align: center; }
+  .footer p {
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: #fff; }
+    .footer p a {
+      margin: 0 10px;
+      color: #fff; }
+    .footer p i {
+      margin: 0 20px; }
+    .footer p b {
+      margin-right: 50px; }
+    .footer p span {
+      display: inline-block;
+      width: 108px;
+      height: 40px;
+      background: url(../img/yangguang-footer.png) no-repeat;
+      margin: 0 30px; }
+      .footer p span:nth-of-type(2) {
+        background-position: -122px 0; }
+      .footer p span:nth-of-type(3) {
+        background-position: -244px 0; }
+
+/*# sourceMappingURL=login.css.map */
