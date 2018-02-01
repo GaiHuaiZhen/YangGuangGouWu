@@ -100,12 +100,36 @@ $("#upwd").blur(function(){
 $("#btn").click(function(){
 	if(flag1&&flag2&&flag3&&$("#check").prop("checked")){
 		
-		document.cookie="uname=$("#uname").val()"
+		//var uname=$("#uname").val()
+		//alert()
+		//存入cookie
+		alert("注册成功")
+  		setCookie("uname",$("#uname").val())
+  		setCookie("upwd",$("#upwd").val())
+  		location.href="login_.html"
+  		//console.log(document.cookie)
+  		
+//		document.cookie="uname="+usename
+//		console.log(document.cookie)
 		
-		location.href="../index.html"
+		//alert()
+		//location.href="../index.html"
 	}
 	
 })
 
-document.cookie="uname"=$("#uname").val()
-console.log(document.cookie)
+
+
+//函数设置cookie
+//设置cookie
+function setCookie(key,value,day){
+	if( day ){
+		var d = new Date();
+		d.setDate( d.getDate() + day );
+		document.cookie = key + "=" + value + ";expires=" + d;
+	}else{
+		document.cookie = key + "=" + value;
+	}
+}
+
+

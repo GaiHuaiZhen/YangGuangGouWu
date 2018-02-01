@@ -247,7 +247,8 @@ nav {
 
 .stairs_1F {
   width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
   .stairs_1F .stairs_1F_header {
     height: 40px;
     border-bottom: 1px solid red;
@@ -555,5 +556,20 @@ nav {
         background-position: -122px 0; }
       .footer p span:nth-of-type(3) {
         background-position: -244px 0; }
+
+.fixed_ul {
+  position: fixed;
+  width: 80px;
+  height: 260px;
+  background: white;
+  right: 0;
+  top: 50%;
+  margin-top: -130px;
+  border: 1px solid #000;
+  display: none; }
+  .fixed_ul li {
+    text-align: center;
+    margin: 10px 0;
+    border: 1px dashed brown; }
 
 /*# sourceMappingURL=index2.css.map */

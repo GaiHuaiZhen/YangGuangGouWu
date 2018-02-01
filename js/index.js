@@ -150,4 +150,72 @@ stairs_1F_header_menu_plays()
 
 
 
+//楼梯效果
+
+
+$(document).scroll(function(){
+	//alert()
+	if(
+		$(document).scrollTop()>150
+	){
+		$(".fixed_ul").css("display","block")
+		
+		
+		
+	}else{
+		$(".fixed_ul").css("display","none")
+	}
+	
+	//console.log($(".stairs_1F").eq(0).offset().top-$(document).scrollTop())
+	
+	//要记住jq没有offsetTop,有的是offset().top, 因为jq出来的值是一个json，是个对象。可以直接offset（）全部出来，然后选
+	
+		for( var i = 0 ; i < $(".stairs_1F").length ; i++ ){
+			if( Math.abs( $(".stairs_1F").eq(i).offset().top-$(document).scrollTop() ) < $(".stairs_1F").eq(i).height()/2 ){
+				$(".fixed_ul li").eq(i).css("background","red");
+			}else{
+				$(".fixed_ul li").eq(i).css("background","white");
+			}
+		}
+		
+		//上面那个是楼层，下面这个是会员专享活动
+		
+		if( Math.abs( $(".member").eq(0).offset().top-$(document).scrollTop() ) < $(".member").eq(0).height()/2 ){
+				$(".fixed_ul li").eq(1).css("background","red");
+			}else{
+				$(".fixed_ul li").eq(1).css("background","white");
+			}
+	
+	
+})
+
+//点击楼层号
+
+
+$(".fixed_ul li").click(function(){
+	//alert($(this).index())
+	$(this).css("background","red")
+			.siblings()
+			.css("background","white")
+	//这个是$(".stairs_1F")楼层的点击
+	if($(this).index()==0){
+		$("html,body").scrollTop( $(".stairs_1F").eq($(this).index()).offset().top )
+	}
+	
+	
+	//这个是$(".member")会员专享活动的点击
+	if($(this).index()==1){
+		$("html,body").scrollTop( $(".member").eq(0).offset().top )
+	}
+	
+	if($(this).index()==2){
+		$("html,body").scrollTop(0)
+	}
+	
+})
+
+$(".sousuo").click(function(){
+	location.href="html/ask.html"
+})
+
 })
